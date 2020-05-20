@@ -149,19 +149,17 @@
 	</header>
     <div class="row">
         <div id="row_1" class="col-md-2">
-		<nav class="main_nav" id= "main_nav">
-
-						
-						<div class="main_nav_content d-flex flex-row">
-
-							<!-- Categories Menu -->
-                            <div type="button"  class="cat_menu_container" >
-<!--                          <button type="button" class="" id="msidebar-toggle" style="z-index:1000;"><span class="fas fa-bars"></span></button>-->
-<!--							<div class="cat_menu_container" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> -->
+		  <nav class="main_nav" id= "main_nav">
+            <div class="main_nav_content d-flex flex-row">
+            <!-- Categories Menu -->
+							
+ 
+<!--                            <button type="button" class="" id="msidebar-toggle" style="z-index:1000;"><span class="fas fa-bars"></span></button>-->
+                            <div class="cat_menu_container" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="z-index:1000;">
 <!--                                <div class="button_nav"><i class="fas fa-bars"></i> 類別</div>-->
 								<div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
-<!--									<div class="cat_burger"><i class="fas fa-bars"></i></div>
-									<div class="cat_menu_text" ></div>-->
+									<div class="cat_burger"><i class="fas fa-bars"></i></div>
+									<div class="cat_menu_text" ></div>
 								</div>
 
 								<ul class="cat_menu">
@@ -906,18 +904,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 if (mode != 'false') {
                     //$('#collapseOne').css('display', 'inline');
                     $('.cat_menu').css('display', 'none');
-                    $('.main_nav').css('width', '0%');
+                    $('.main_nav').css('width', '50%');
                     $('#row_1').removeClass('col-md-2');
                     $('#row_1').addClass('col-md-1');
 //                    $('#row_2').removeClass('col-md-10');
 //                    $('#row_2').addClass('col-md-11');
                     $(this).attr('aria-expanded',false);
                     
+                    
                 }
                 else {
                     $('.cat_menu').css('display', 'inline');
                     $(this).attr('aria-expanded',true);
-                    $('.main_nav').css('width', '100%');
+                    $('.main_nav').css('width', '80%');
                     $('#row_1').removeClass('col-md-1');
                     $('#row_1').addClass('col-md-2');
 //                    $('#row_2').removeClass('col-md-11');
