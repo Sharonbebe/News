@@ -949,7 +949,7 @@ select option
 {
 	display: block;
 	position: relative;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 300;
 	color: #000000;
 	line-height: 46px;
@@ -1004,7 +1004,7 @@ select option
 }
 .main_nav_dropdown li a
 {
-	font-size: 17px;
+	font-size: 20px;
 	font-weight: 400;
 	color: #696464;
 	line-height: 60px;
@@ -1519,7 +1519,7 @@ select option
 .deals_slider_nav i
 {
 	font-size: 18px;
-	padding: 10px;
+	padding: 20px;
 	color: #666666;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -2757,6 +2757,7 @@ select option
 }
 .advert_content
 {
+    width: 100%;
 	padding-left: 30px;
 }
 .advert_subtitle
@@ -2791,6 +2792,13 @@ select option
 	margin-top: 10px;
     width: 90%;
 }
+.advert_text_index4
+{
+	color: #828282;
+	margin-top: 10px;
+    width: 90%;
+}
+
 .advert_image
 {
 	width: 178px;
@@ -2808,7 +2816,7 @@ select option
 
 .trends
 {
-	padding-top: 80px;
+	padding-top: 20px;
 	padding-bottom: 80px;
 }
 .trends_overlay
@@ -2891,7 +2899,9 @@ select option
 {
 	background: #FFFFFF;
 	border-radius: 8px;
-	padding: 25px;
+	padding: 10px;
+
+    
 }
 .trends_image
 {
@@ -2905,7 +2915,7 @@ select option
 }
 .trends_category a
 {
-	font-size: 12px;
+	font-size: 16px;
 	color: rgba(0,0,0,0.5);
 }
 .trends_category a:hover
@@ -2914,7 +2924,7 @@ select option
 }
 .trends_content
 {
-	margin-top: 24px;
+	margin-top: 20%;
 }
 .trends_name
 {
@@ -2922,7 +2932,7 @@ select option
 }
 .trends_name a
 {
-	font-size: 16px;
+	font-size: 23px;
 	color: #000000;
 }
 .trends_name a:hover
@@ -3027,7 +3037,7 @@ select option
 }
 .trends_new
 {
-	background: #0e8ce4;
+	background: #dc3545;
 }
 
 /*********************************
