@@ -837,6 +837,10 @@ select option
 {
     left: 2%;
 }
+#row_2
+{
+    padding-right: 30px;
+}
 .main_nav
 {
 	width: 100%;
@@ -935,7 +939,7 @@ select option
 	display: block;
 	position: relative;
 	width: auto;
-	height: 46px;
+	height: 50px;
 	border-bottom: solid 1px #f2f2f2;
 	padding-left: 35px;
 	padding-right: 30px;
@@ -2746,7 +2750,7 @@ select option
 {
 	width: 100%;
 /*	padding-top: 80px;*/
-	padding-bottom: 80px;
+/*	padding-bottom: 80px;*/
 }
 .advert
 {
@@ -2767,6 +2771,12 @@ select option
 	color: rgba(0,0,0,0.5);
 	margin-bottom: 26px;
 }
+.advert_title
+{
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+}
 .advert_title a
 {
 	font-size: 18px;
@@ -2775,7 +2785,7 @@ select option
 }
 .advert_title a:hover
 {
-	color: #0e8ce4;
+	color: #17a2b8;
 }
 .advert_title_2 a
 {
@@ -2791,12 +2801,15 @@ select option
 {
 	padding-bottom: 15px;
 }
-.advert_text
+.advert_text a
 {
+	font-size: 22px;
+	font-weight: 500;
 	color: #828282;
-	margin-top: 10px;
-    width: 90%;
-    font-size: 20px;
+}
+.advert_text a:hover
+{
+	color: #0e8ce4;
 }
 .advert_text_index4
 {
@@ -2807,13 +2820,17 @@ select option
 
 .advert_image
 {
-	width: 178px;
+	width: 200px;
 	height: 100%;
 }
 .advert_image img
 {
 	display: block;
 	max-width: 100%;
+}
+.ml-auto
+{
+    padding-right: 10px;
 }
 
 /*********************************
@@ -2823,7 +2840,7 @@ select option
 .trends
 {
 	padding-top: 20px;
-	padding-bottom: 80px;
+	padding-bottom: 20px;
 }
 .trends_overlay
 {
