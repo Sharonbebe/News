@@ -79,8 +79,8 @@
                 <div class="trends_background" style="background-image:url(images/trends_background.jpg)"></div>
                 <div class="trends_overlay"></div>
                 <div class="container">
-                    <div class="advert_title" style="font-size: 14px;" align="center"><a href="../News/index4.html">恭喜您完成任務，點我回首頁</a></div>
-                    
+                    <div class="advert_title" id="finishtime" style="font-size: 14px;" align="center">
+                    </div>                  
                 </div>
             </div>
         </div>
@@ -118,3 +118,9 @@
 </body>
 
 </html>
+<script type="text/javascript">
+var eTime =new Date();
+//    alert("任務完成時間："+ eTime.getHours()+':'+eTime.getMinutes()+':'+eTime.getSeconds());
+    var str = '<a href="../News/index.html">恭喜您完成任務，點我回首頁，時間：'+eTime.getHours()+':'+eTime.getMinutes()+':'+eTime.getSeconds() +'</a>'
+    $('#finishtime').html(str);    
+</script>

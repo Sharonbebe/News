@@ -382,7 +382,8 @@
 
 </html>
 
- <script type="text/javascript">
+<script type="text/javascript">
+
      $(document).on('click', '.cat_menu_container', function () {
         const mode = $(this).attr('aria-expanded');
             if (mode != 'false') {
@@ -402,4 +403,8 @@
                     $('#row_2').css('padding-right','30px');
                 }
             });
+
+var eTime =new Date(); 
+    alert("任務開始時間："+ eTime.getHours()+':'+eTime.getMinutes()+':'+eTime.getSeconds());
+
  </script>
