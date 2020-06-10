@@ -47,7 +47,7 @@
 							</div>
 							<div class="top_bar_user">
 								<div class="user_icon"><img src="images/user.svg" alt=""></div>
-								<div><a href="#">註冊</a></div>
+								<div id="time_start"></div>
 								<div><a href="#">登入</a></div>
 							</div>
 						</div>
@@ -187,7 +187,7 @@
 				            <li class="hassubs"><a href="../News/index4_sport.html">體育<i class="fas fa-chevron-right"></i></a>
                                 <ul>
                                     <li><a href="shop.html">棒球<i class="fas fa-chevron-down"></i></a></li>
-                                    <li><a href="./index4_sport.html">籃球<i class="fas fa-chevron-down"></i></a></li>
+                                    <li><a href="./index4_sport_nba.html">籃球<i class="fas fa-chevron-down"></i></a></li>
                                     <li><a href="blog.html">網球<i class="fas fa-chevron-down"></i></a></li>
                                     <li><a href="blog_single.html">高爾夫球<i class="fas fa-chevron-down"></i></a></li>
                                     <li><a href="regular.html">羽球<i class="fas fa-chevron-down"></i></a></li>
@@ -205,7 +205,7 @@
 				            <li class="hassubs"><a href="../News/index4_art.html">娛樂<i class="fas fa-chevron-right"></i></a>
                                 <ul>
                                     <li><a href="shop.html">電影<i class="fas fa-chevron-down"></i></a></li>
-                                    <li><a href="product.html">影視名人<i class="fas fa-chevron-down"></i></a></li>
+                                    <li><a href="index4_art_people.html">影視名人<i class="fas fa-chevron-down"></i></a></li>
                                     <li><a href="blog.html">戲劇<i class="fas fa-chevron-down"></i></a></li>
                                     <li><a href="blog_single.html">日韓<i class="fas fa-chevron-down"></i></a></li>
                                     <li><a href="regular.html">歐美<i class="fas fa-chevron-down"></i></a></li>
@@ -404,7 +404,7 @@
                 }
             });
 
-var eTime =new Date(); 
-    alert("任務開始時間："+ eTime.getHours()+':'+eTime.getMinutes()+':'+eTime.getSeconds());
-
+var eTime =new Date();
+    var str = '<a>時間：'+eTime.getHours()+':'+eTime.getMinutes()+':'+eTime.getSeconds() +'</a>'
+    $('#time_start').html(str); 
  </script>
