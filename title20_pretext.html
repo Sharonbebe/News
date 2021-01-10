@@ -16,7 +16,11 @@
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 
 </head>
-
+<style>
+    .trends_name a{
+        font-size:18px
+    }
+</style>
 <body style="font-family: &quot;Open Sans&quot;, &quot;Microsoft JhengHei&quot;, Arial, Helvetica, sans-serif;">
 
 <div class="super_container">	
@@ -32,12 +36,12 @@
 								<ul class="standard_dropdown top_bar_dropdown">
 									<li>
 										<a href="#">樣板選擇<i class="fas fa-chevron-down"></i></a>
-										<ul>
-											<li><a href="./index.html">橫列區塊式</a></li>
-											<li><a href="./index2.html">直列區塊式</a></li>
-                                            <li><a href="./index3.html">橫列條列式</a></li>
-                                            <li><a href="./index4.html">直列區塊式</a></li>
-										</ul>
+										<ul>	
+											<li><a href="./title20_pretext.html">title20_pretext</a></li>
+                                            <li><a href="./title24_pretext.html">title24_pretext</a></li>
+                                            <li><a href="./title20_nonpretext.html">title20_nonpretext</a></li>
+                                            <li><a href="./title24_nonpretext.html">title24_nonpretext</a></li>
+                                        </ul>
 									</li>
 								</ul>
 							</div>
@@ -381,20 +385,20 @@
                                     </div>
                                     <!-- Trends Slider Item -->
                                     <div class="owl-item">
-                                        <div class="trends_item">
-                                            <div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="images/photo2.jpg" alt=""></div>
+                                        <div class="trends_item is_new">
+                                            <div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="images/photo4.jpg" alt=""></div>
                                             <div class="trends_content" style="margin-top:5%">
-                                                <div class="trends_category"><a href="#">科技/3C家電</a></div>
+                                                <div class="trends_category"><a href="#">財經/2020報稅</a></div>
                                                 <div class="trends_info clearfix">
-                                                    <div class="trends_name"><a href="product.html">2020年五大科技趨勢，重大的改變和顛覆。</a></div>
+                                                    <div class="trends_name"><a href="product.html">免結算申報標準大公開，年收40.8萬以下免繳稅</a></div>
                                                 </div>
                                                 <div class="trends_info clearfix">
-                                                    <div class="review_text">以下是我們正在追蹤的2020年五大科技趨勢，它們有可能帶來重大的改變和顛覆——既有顯而易見的，也有悄無聲息的。零工經濟和共享經濟蓬勃 ...</div>
+                                                    <div class="review_text">財政部國稅局指出，只要年所得未達免稅額及標準扣除額合計數，在未列報爸媽等扶養親屬之，單身族年收入在20.8萬元、有配偶41.6萬元以下...</div>
                                                 </div>
                                             </div>
                                             <ul class="trends_marks">
                                                 <li class="trends_mark trends_discount">-25%</li>
-                                                <li class="trends_mark trends_new">new</li>
+                                                <li class="trends_mark trends_new">HOT</li>
                                             </ul>
                                             <div class="trends_fav"><i class="fas fa-heart"></i></div>
                                         </div>
@@ -412,15 +416,15 @@
                                     <!-- Trends Slider Item -->
                                     <div class="owl-item">
                                         <div class="trends_item is_new">
-                                            <div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="images/yahoo/new_p_7.jpg" alt=""></div>
+                                            <div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="images/yahoo/new_p_62.jpg" alt=""></div>
                                             <div class="trends_content">
-                                                <div class="trends_category"><a href="#">地方/中部離島</a></div>
+                                                <div class="trends_category"><a href="#">運動/籃球</a></div>
                                                 <div class="trends_info clearfix">
-                                                    <div class="trends_name"><a href="product.html">台中房價狂飆 房仲：西屯恐將破百萬</a></div>
+                                                    <div class="trends_name"><a href="product.html">P.喬治證明價值狂飆33分 快艇收拾衛冕軍湖人</a></div>
                                                 </div>
                                             </div>
                                             <div class="trends_info clearfix">
-                                                    <div class="review_text">以下是我們正在追蹤的2020年五大科技趨勢，它們有可能帶來重大的改變和顛覆——既有顯而易見的，也有悄無聲息的。零工經濟和共享經濟蓬勃 ...</div>
+                                                    <div class="review_text">NBA新賽季今上演眾所矚目的「洛城內戰」，P.喬治甩開後賽低迷的罵名，用全場33分證明球隊給5年大約非看走眼，快艇以116：109收拾衛冕軍湖人，首戰就開紅盤...</div>
                                             </div>
                                             <div class="trends_fav"><i class="fas fa-heart"></i></div>
                                         </div>
@@ -739,14 +743,22 @@
 <script src="plugins/slick-1.8.0/slick.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="js/custom.js"></script>
-<script src="/news_content.js"></script>
+<script src="news_content.js"></script>
 </body>
 
 </html>
 <script type="text/javascript">
-    var eTime =new Date();
-    var str = '<a>時間：'+eTime.getHours()+':'+eTime.getMinutes()+':'+eTime.getSeconds() +'</a>'
-    $('#time_start').html(str);   
+    
+    ShowTime();
+    function ShowTime(){
+        var eTime =new Date();
+        var str = '<a>時間：'+eTime.getHours()+':'+eTime.getMinutes()+':'+eTime.getSeconds() +'</a>';
+        $('#time_start').html(str);   
+        setTimeout('ShowTime()',1000);
+        console.log(str);
+    }
+    
+    
     $(document).on('click', '.owl-item', function () {
         console.log("123");
         
