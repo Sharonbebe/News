@@ -735,7 +735,23 @@
 </style>
 </html>
 <script type="text/javascript">
-    var eTime =new Date();
-    var str = '<a>時間：'+eTime.getHours()+':'+eTime.getMinutes()+':'+eTime.getSeconds() +'</a>'
-    $('#time_start').html(str);   
+    ShowTime();
+    function ShowTime(){
+        var eTime =new Date();
+        var str = '<a>時間：'+eTime.getHours()+':'+eTime.getMinutes()+':'+eTime.getSeconds() +'</a>';
+        $('#time_start').html(str);   
+        setTimeout('ShowTime()',1000);
+        console.log(str);
+    }
+    
+    
+    $(document).on('click', '.owl-item', function () {
+        console.log("123");
+        
+    });
+    $(document).on('click', '.hassubs', function () {
+        console.log("145");
+        
+    });
+    
 </script>

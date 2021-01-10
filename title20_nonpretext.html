@@ -371,11 +371,11 @@
                                     <!-- Trends Slider Item -->
                                     <div class="owl-item">
                                         <div class="trends_item is_new">
-                                            <div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="images/photo4.jpg" alt=""></div>
+                                            <div class="trends_image d-flex flex-column align-items-center justify-content-center"><img src="images/yahoo/new_p_36.jpg" alt=""></div>
                                             <div class="trends_content">
-                                                <div class="trends_category"><a href="#">財經/2020報稅</a></div>
+                                                <div class="trends_category"><a href="#">健康/憂鬱症</a></div>
                                                 <div class="trends_info clearfix">
-                                                    <div class="trends_name"><a href="product.html">免結算申報標準大公開，年收40.8萬以下免繳稅</a></div>
+                                                    <div class="trends_name"><a href="product.html">憂鬱症五大類型與常見症狀，3分鐘檢測憂鬱指數</a></div>
                                                 </div>
                                             </div>
                                             <ul class="trends_marks">
@@ -735,7 +735,23 @@
 </style>
 </html>
 <script type="text/javascript">
-    var eTime =new Date();
-    var str = '<a>時間：'+eTime.getHours()+':'+eTime.getMinutes()+':'+eTime.getSeconds() +'</a>'
-    $('#time_start').html(str);   
+        ShowTime();
+    function ShowTime(){
+        var eTime =new Date();
+        var str = '<a>時間：'+eTime.getHours()+':'+eTime.getMinutes()+':'+eTime.getSeconds() +'</a>';
+        $('#time_start').html(str);   
+        setTimeout('ShowTime()',1000);
+        console.log(str);
+    }
+    
+    
+    $(document).on('click', '.owl-item', function () {
+        console.log("123");
+        
+    });
+    $(document).on('click', '.hassubs', function () {
+        console.log("145");
+        
+    });
+      
 </script>
